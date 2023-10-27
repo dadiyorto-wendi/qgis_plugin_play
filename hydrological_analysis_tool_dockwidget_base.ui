@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HydrologicalAnalysisToolDockWidgetBase</class>
+ <widget class="QDockWidget" name="HydrologicalAnalysisToolDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hydrological Analysis Tool</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Station Metadata</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Analysis</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="loadNetCdfButton">
+      <property name="text">
+       <string>Load NetCDF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLineEdit" name="obs_fpath_ui">
+      <property name="text">
+       <string>Documents/hat/prototype/obs.nc</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QWidget" name="plotWidget" native="true"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLineEdit" name="sims_fpath_ui">
+      <property name="text">
+       <string>Documents/hat/prototype/sims.nc</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="loadGeoJsonButton">
+      <property name="text">
+       <string>Load GeoJson</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>KGE = 0.872</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Station ID = G0001</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Timeseries data</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="station_fpath_ui">
+      <property name="text">
+       <string>Documents/hat/prototype/stations.geojson</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
